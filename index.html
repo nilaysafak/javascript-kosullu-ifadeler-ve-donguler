@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Koşullu İfadeler ve Döngüler</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        input {
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .result {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-radius: 4px;
+        }
+        pre {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Koşullu İfadeler ve Döngüler</h1>
+    
+    <div class="section">
+        <h2>Koşullu İfadeler</h2>
+        <p>Bir sayı girin ve pozitif, negatif veya sıfır olduğunu kontrol edin:</p>
+        <input type="number" id="numberInput" placeholder="Bir sayı girin">
+        <button onclick="checkNumber()">Kontrol Et</button>
+        <div id="numberResult" class="result"></div>
+    </div>
+    
+    <div class="section">
+        <h2>Döngüler</h2>
+        <button onclick="showLoops()">Döngüleri Göster</button>
+        <div id="loopsResult" class="result"></div>
+    </div>
+    
+    <div class="section">
+        <h2>Asal Sayı Kontrolü</h2>
+        <p>Bir sayı girin ve asal olup olmadığını kontrol edin:</p>
+        <input type="number" id="primeInput" placeholder="Bir sayı girin">
+        <button onclick="checkPrime()">Kontrol Et</button>
+        <div id="primeResult" class="result"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
